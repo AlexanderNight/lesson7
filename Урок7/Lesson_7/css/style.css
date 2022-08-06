@@ -1,0 +1,188 @@
+/* 
+&display=swap
+&subset=cyrillic-ext 
+*/
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,700,900&display=swap");
+
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+html,
+body {
+	height: 100%;
+}
+html {
+	font-size: 16px; /* по умолчанию */
+}
+body {
+	line-height: 1;
+	font-family: "Roboto";
+	background: #f5f5f5;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	padding: 50px;
+}
+/* ------------------------------ */
+.block {
+	font-size: 30px;
+	/* padding: 30px; */
+
+	/* Определяет цвет фона элемента */
+	/* background-color: green;
+
+	/* Устанавливает фоновое изображение 
+	для элемента либо задает градиентную заливку */
+	/* background-image: url("../img/01.png"); */
+	/* background-image: linear-gradient(to bottom, rgba(236, 232, 157, 1) 0%, rgba(94, 83, 115, 1) 50%, rgba(24, 181, 164, 1) 100%); */
+
+	/* Определяет, как будет повторяться фоновое изображение */
+	/* background-repeat: no-repeat; */
+
+	/* Задает начальное положение фонового изображения, где первое значение 
+	(проценты, px, слово) определяет расположение 
+	по горизонтали, второе - вертикали. */
+	/* background-position: 0 0; */
+
+	/* Масштабирует фоновое изображение согласно заданным размерам. 
+	В цифрах, где первое значение (проценты, px) определяет ширину, 
+	второе - высоту. Либо специальным значением. */
+	/* background-size: auto auto; */
+
+	/* Устанавливает, будет ли прокручиваться фоновое изображение вместе с содержимым элемента. */
+	/* background-attachment: scroll; */
+
+	/* Универсальное свойство */
+	/* background: green url("../img/01.png") 50% / cover no-repeat fixed; */
+
+	/* background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%), url("../img/image_1.jpg") 0 0 / 100px no-repeat, green url("../img/01.png") 50% / cover no-repeat; */
+}
+
+ul {
+	margin: 20px 0px;
+}
+ul li {
+	margin: 0px 0px 15px 0px;
+	font-size: 12px;
+	min-height: 30px;
+	background: url("../img/icon.png") 0 0 / 30px no-repeat;
+	padding: 7px 0px 0px 30px;
+}
+
+/* ------------------------------ */
+
+.whoweare {
+	padding: 0px 0px 170px 0px;
+}
+.whoweare__container {
+	max-width: 1020px;
+	margin: 0px auto;
+	border: 1px solid transparent;
+	padding: 100px 87px 0px 87px;
+	background: #fff url("../img/bg.png") 100% 0 no-repeat;
+}
+.whoweare__content {
+}
+.whoweare__subtitle {
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 27px;
+	letter-spacing: 2.5px;
+	text-transform: uppercase;
+	margin: 0px 0px 28px 0px;
+	background: url("../img/icon.png") 0 0 no-repeat;
+	padding: 0px 0px 0px 30px;
+}
+.whoweare__title {
+	color: #02133c;
+	font-weight: 900;
+	font-size: 36px;
+	line-height: 42px;
+	max-width: 583px;
+	margin: 0px 0px 33px 0px;
+}
+.whoweare__text {
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.15px;
+	margin: 0px 0px 52px 0px;
+}
+.whoweare__image {
+	margin: 0px 0px -120px 0px;
+}
+.whoweare__image img {
+	max-width: 100%;
+}
+
+/*---------------------------*/
+
+.someblock {
+	padding: 15px;
+	color: #fff;
+	max-width: 350px;
+	background: #252525;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+	border-radius: 6px;
+	font-size: 0;
+}
+.someblock__rating {
+	vertical-align: middle;
+	display: inline-block;
+	width: 60%;
+}
+.rating {
+}
+.rating__stars {
+	display: inline-block;
+	vertical-align: middle;
+}
+.rating__value {
+	font-size: 12px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.someblock__action {
+	vertical-align: middle;
+	width: 40%;
+	text-align: right;
+	display: inline-block;
+}
+.someblock__button {
+	font-size: 14px;
+	background: #262626;
+	border: 2px solid #303030;
+	border-radius: 30px;
+	padding: 11px 32px;
+	text-transform: uppercase;
+	display: inline-block;
+	color: rgba(255, 255, 255, 0.5);
+}

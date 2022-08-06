@@ -1,0 +1,71 @@
+/* Подключаем шрифты удаленно - по умолчанию*/
+
+/* Жмем F1 выбираем import CSS и добовляем в конец + чистим от лишнего &display=swap&subset=cyrillic-ext */
+/* @import url(https://fonts.googleapis.com/css?family=regular,700,900); */
+
+/* Дочерние шрифты удаленно */
+@import url(https://fonts.googleapis.com/css?family=Roboto:regular,700,900&display=swap&subset=cyrillic-ext);
+/* ---------------------------------------------------------------------- */
+
+/* Подключаем шрифты локально - по умолчанию*/
+
+/* Находим и качаем ttf конвертируем в woff/woff2 и копируем стили из style.css */
+@font-face {
+	font-family: "Lugatype";
+	src: url("../fonts/Lugatype.woff2") format("woff2"), url("../fonts/Lugatype.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+/* Дочерние шрифты локально*/
+
+/* ----------------------------------------------------------------------- */
+
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+html,
+body {
+	min-height: 100%;
+}
+html {
+	font-size: 16px; /* размер фрифта по умолчанию */
+}
+body {
+	font-family: "Lugatype", serif; /*  шрифт по умолчанию  */
+	height: 100%;
+	line-height: 1;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+/* ---------------------------------------------------------------------- */
